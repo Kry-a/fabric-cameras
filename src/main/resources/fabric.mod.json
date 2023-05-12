@@ -19,7 +19,7 @@
       "wtf.krya.FabricCameras"
     ],
     "client": [
-      "wtf.krya.ExampleModClient"
+      "wtf.krya.FabricCamerasClient"
     ],
     "fabric-datagen": [
       "wtf.krya.FabricCamerasDataGenerator"
