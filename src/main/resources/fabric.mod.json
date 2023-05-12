@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "fabric-cameras",
+  "version": "${version}",
+  "name": "Fabric Cameras",
+  "description": "A mod that adds cameras to Fabric!",
+  "authors": [
+    "Krya"
+  ],
+  "contact": {
+    "homepage": "https://krya.wtf/mods/fabric-cameras?us=mod_contact_page",
+    "source": "https://github.com/Kry-a/fabric-cameras"
+  },
+  "license": "BSD-3-Clause",
+  "icon": "assets/fabric-cameras/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "wtf.krya.FabricCameras"
+    ],
+    "client": [
+      "wtf.krya.ExampleModClient"
+    ],
+    "fabric-datagen": [
+      "wtf.krya.FabricCamerasDataGenerator"
+    ]
+  },
+  "mixins": [
+    "fabric-cameras.mixins.json",
+    {
+      "config": "fabric-cameras.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": "~1.19.2",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
