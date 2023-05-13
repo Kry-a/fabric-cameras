@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "fabric-cameras",
+  "id": "fabriccameras",
   "version": "${version}",
   "name": "Fabric Cameras",
   "description": "A mod that adds cameras to Fabric!",
@@ -12,7 +12,7 @@
     "source": "https://github.com/Kry-a/fabric-cameras"
   },
   "license": "BSD-3-Clause",
-  "icon": "assets/fabric-cameras/icon.png",
+  "icon": "assets/fabriccameras/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -20,15 +20,12 @@
     ],
     "client": [
       "wtf.krya.FabricCamerasClient"
-    ],
-    "fabric-datagen": [
-      "wtf.krya.FabricCamerasDataGenerator"
     ]
   },
   "mixins": [
-    "fabric-cameras.mixins.json",
+    "fabriccameras.mixins.json",
     {
-      "config": "fabric-cameras.client.mixins.json",
+      "config": "fabriccameras.client.mixins.json",
       "environment": "client"
     }
   ],
